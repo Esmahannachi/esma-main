@@ -70,10 +70,10 @@ Choisi pour son puissant DSL pour définir les scénarios, ses rapports HTML dé
 6. Cassandra
 Nous sommes passés d'une architecture traditionnelle master-slave à l'architecture native masterless de Cassandra, permettant une scalabilité horizontale sans point de défaillance unique. Cette transition s'intègre parfaitement aux fonctionnalités de scalabilité de Kubernetes.
 
-Ces améliorations garantissent :
+ * Ces améliorations garantissent :
 
-Une haute disponibilité grâce à la réplication des données entre les nœuds.
-Une tolérance aux pannes renforcée en combinant les capacités d'orchestration de Kubernetes avec la conception résiliente de Cassandra.
+    * Une haute disponibilité grâce à la réplication des données entre les nœuds.
+    * Une tolérance aux pannes renforcée en combinant les capacités d'orchestration de Kubernetes avec la conception résiliente de Cassandra.
 
 <img src="images/SmartMeter.png" alt="SmartMeter Architecture" width="640x">
 
