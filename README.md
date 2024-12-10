@@ -12,12 +12,12 @@ Dans la configuration précédente, Docker Swarm était utilisé pour déployer 
   * Mise à l'échelle automatique.
   * Auto-réparation (redémarrage automatique des conteneurs échoués).
   * Meilleur support pour les applications complexes multi-conteneurs.
-  * Écosystème et support communautaire : Avec une communauté plus large et active, Kubernetes bénéficie :
+* Écosystème et support communautaire : Avec une communauté plus large et active, Kubernetes bénéficie :
 
-D'une documentation étendue.
-De nombreuses intégrations tierces.
-D'un riche écosystème d'outils.
-Outils clés dans l'écosystème Kubernetes :
+   * D'une documentation étendue.
+   * De nombreuses intégrations tierces.
+   * D'un riche écosystème d'outils.
+   * Outils clés dans l'écosystème Kubernetes :
 
 Helm : Gestionnaire de packages pour les manifests Kubernetes, simplifiant le déploiement et la gestion des applications.
 
