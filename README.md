@@ -34,8 +34,8 @@ Dans la configuration précédente, Docker Swarm était utilisé pour déployer 
 
  * Comparaison :
 
-     *Kafka : Meilleur pour le streaming de messages à grande échelle et les architectures basées sur les événements, mais plus lourd et complexe à gérer.
-     *RabbitMQ : Offre des fonctionnalités avancées de routage et de mise en file d'attente des messages, mais moins léger et rapide que NATS.
+     * Kafka : Meilleur pour le streaming de messages à grande échelle et les architectures basées sur les événements, mais plus lourd et complexe à gérer.
+     * RabbitMQ : Offre des fonctionnalités avancées de routage et de mise en file d'attente des messages, mais moins léger et rapide que NATS.
  *Pourquoi NATS ?
 Choisi pour sa simplicité, sa faible latence (<1 ms), et son adéquation avec les scénarios nécessitant une communication rapide et éphémère sans persistance de messages à long terme.
 
