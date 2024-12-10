@@ -9,12 +9,12 @@
 1. Kubernetes
 Dans la configuration précédente, Docker Swarm était utilisé pour déployer divers composants. Cependant, nous avons décidé de migrer vers Kubernetes pour plusieurs raisons convaincantes :
 
-Fonctionnalités avancées d'orchestration : Kubernetes offre un ensemble robuste de capacités, telles que :
+  *Fonctionnalités avancées d'orchestration : Kubernetes offre un ensemble robuste de capacités, telles que :
 
-Mise à l'échelle automatique.
-Auto-réparation (redémarrage automatique des conteneurs échoués).
-Meilleur support pour les applications complexes multi-conteneurs.
-Écosystème et support communautaire : Avec une communauté plus large et active, Kubernetes bénéficie :
+  *Mise à l'échelle automatique.
+  *Auto-réparation (redémarrage automatique des conteneurs échoués).
+  *Meilleur support pour les applications complexes multi-conteneurs.
+  *Écosystème et support communautaire : Avec une communauté plus large et active, Kubernetes bénéficie :
 
 D'une documentation étendue.
 De nombreuses intégrations tierces.
