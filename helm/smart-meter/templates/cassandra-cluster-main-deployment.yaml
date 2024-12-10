@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cassandra-cluster-main
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: cassandra-cluster-main
+  template:
+    metadata:
+      labels:
+        io.kompose.service: cassandra-cluster-main
+    spec:
+      containers:
+        - env:
+            - name: CASSANDRA_COUNT_PORT
+              value: "6161"
+            - name: CASSANDRA_SETUP_FILE
+              value: /cql/create-timeseries.cql
+          image: logimethods/smart-meter:app_cassandra-1.5
+          name: cassandra-cluster-main
+          ports:
+            - containerPort: 6161
+              protocol: TCP
+            - containerPort: 9042
+              protocol: TCP
+      restartPolicy: Always

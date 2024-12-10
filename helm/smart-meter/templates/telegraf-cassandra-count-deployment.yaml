@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: telegraf-cassandra-count
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+              io.kompose.service: telegraf-cassandra-count
+  template:
+    metadata:
+      labels:
+        io.kompose.service: telegraf-cassandra-count
+    spec:
+      containers:
+        - args:
+            - telegraf
+            - --output-filter
+            - influxdb
+            - -config
+            - /etc/telegraf/cassandra_count.conf
+          env:
+            - name: CASSANDRA_COUNT_PORT
+              value: "6161"
+            - name: CASSANDRA_MAIN_URL
+              value: cassandra-cluster-main.default.svc.cluster.local
+            - name: EUREKA_URL
+              value: eureka
+            - name: JMX_PASSWORD
+              value: DDwe45Df2sdsaf45Dsff
+            - name: TELEGRAF_DEBUG
+              value: "false"
+            - name: TELEGRAF_INPUT_TIMEOUT
+              value: 20s
+            - name: TELEGRAF_INTERVAL
+              value: 10s
+            - name: TELEGRAF_QUIET
+              value: "true"
+          image: logimethods/smart-meter:app_telegraf-1.5
+          name: telegraf-cassandra-count
+      restartPolicy: Always

@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    io.kompose.service: cassandra-cluster-main
+  name: cassandra-cluster-main
+spec:
+  ports:
+    - name: "6161"
+      port: 6161
+      targetPort: 6161
+    - name: "9042"
+      port: 9042
+      targetPort: 9042
+  selector:
+    io.kompose.service: cassandra-cluster-main
