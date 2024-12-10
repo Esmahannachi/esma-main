@@ -42,11 +42,11 @@ To demonstrate a Smart Meter Big Data Application.
 ```
 ## Kubernetes
 
-* First, create the required configmaps and secrets using :
-  * Create the configmaps that holds the init scripts to create the keyspaces `smart-meter/scripts/kubernetes/setup_cassandra_initscripts.sh`
-  * Create the secret that will holds the credentials to access NATS server `smart-meter/scripts/kubernetes/create_kubernetes_nats_creds.sh`
-* Second, install the helm chart to deploy the differents needed componenets using  `helm install <release-name> helm/smart-meter`
-  * if you need to adjust the configurations for the differents deployment using the values file `helm/smart-meter/values.yaml`
+* Tout d'abord, créez les ConfigMaps et les Secrets nécessaires en utilisant :
+  * Créez les ConfigMaps qui contiennent les scripts d'initialisation pour créer les keyspaces : `smart-meter/scripts/kubernetes/setup_cassandra_initscripts.sh`
+  * Créez le Secret qui contiendra les identifiants pour accéder au serveur NATS : `smart-meter/scripts/kubernetes/create_kubernetes_nats_creds.sh`
+* Ensuite, installez le chart Helm pour déployer les différents composants nécessaires en utilisant `helm install <release-name> helm/smart-meter`
+  * Si vous avez besoin d'ajuster les configurations pour les différents déploiements, utilisez le fichier de valeurs : `helm/smart-meter/values.yaml`
 
 
 
